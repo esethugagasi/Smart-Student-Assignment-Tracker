@@ -1,0 +1,13 @@
+Reflection – Assignment 6
+
+This assignment introduced Agile planning concepts such as user stories, backlog prioritization, and sprint planning. One of the main challenges was acting in multiple roles simultaneously, including product owner, scrum master, and developer. This created internal conflict when deciding priorities, as different roles have different perspectives.
+
+As the only person working on the project, prioritization became a challenge. There was tension between implementing core features quickly and ensuring system quality through security and performance requirements. This required balancing immediate functionality with long-term system stability.
+
+Another challenge was estimating effort using story points. Without a team, it was difficult to accurately estimate effort, as there was no reference point for comparison. This required making assumptions based on personal experience and complexity of tasks.
+
+Resistance was also experienced internally when breaking down requirements into smaller user stories. Some tasks seemed straightforward at a high level but became complex when detailed into development steps. This highlighted the importance of proper task decomposition in Agile development.
+
+Sprint planning also required careful consideration of workload. Since all tasks are assigned to one person, it was important to avoid overcommitting while still delivering meaningful progress toward the MVP.
+
+Overall, this assignment improved understanding of Agile methodologies and demonstrated how structured planning can improve development efficiency. It also highlighted the importance of balancing technical and user-focused requirements while managing limited resources as an individual developer.
