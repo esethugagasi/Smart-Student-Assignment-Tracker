@@ -36,3 +36,17 @@ Future improvements to the system may include:
 •	Intelligent scheduling advice.
 
 This project is developed as part of the Software Engineering course and will progress throughout the semester.
+
+Kanban Board Customization
+----------------------------
+
+The project uses an utomated Kanban board to manage tasks.
+
+Customizations include:
+
+Added Testing column to support validation of features
+Added Blocked column to track tasks that cannot proceed
+Applied WIP limit of 3 tasks in progress to improve focus
+
+This setup improves workflow visibility and aligns with Agile best practices.
+
