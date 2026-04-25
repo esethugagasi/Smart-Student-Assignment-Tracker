@@ -1,0 +1,54 @@
+Reflection Assignment 9
+------------------------
+Designing the domain model and class diagram presented several challenges. One of the main difficulties was deciding the appropriate level of abstraction. 
+Initially, it was unclear whether to combine certain concepts such as Student and UserAccount into a single class. However, separating them allowed for 
+better representation of authentication and user identity, which aligns with real-world systems.
+
+Another challenge was defining relationships between classes. Determining whether to use association, aggregation, or composition required careful consideration. 
+For example, the relationship between Module and Assignment was modeled as a strong association because assignments cannot exist without a module. Similarly, 
+Assignment and Deadline were tightly coupled, as each assignment must have a deadline.
+
+Method definitions also required thoughtful design. It was important to ensure that methods reflected system functionality defined in previous assignments. 
+For instance, methods like create(), updateStatus(), and send() were derived directly from functional requirements and use cases. 
+This ensured consistency across the system.
+
+Aligning the class diagram with previous assignments was critical. The use cases defined earlier guided the identification of system operations, 
+while state diagrams helped define object behaviors. Activity diagrams influenced how interactions between classes were structured. 
+This integration ensured that the class diagram was not isolated but part of a continuous design process.
+
+Trade-offs were also made during the design process. For example, inheritance was considered but not heavily used to avoid unnecessary complexity. 
+Instead, simpler associations were preferred to maintain clarity and readability. This decision reflects a balance between theoretical design and practical implementation.
+
+Another trade-off involved simplifying certain components such as Dashboard and Session. While these could be expanded into more complex structures, 
+they were kept minimal to align with the project’s scope as an individual assignment.
+
+Overall, this assignment improved understanding of object-oriented design principles, including encapsulation, modularity, and separation of concerns. 
+It highlighted the importance of designing systems that are both functional and maintainable. The process also reinforced the value of traceability, 
+ensuring that all components of the system align with requirements and user needs.
+
+-------------------------------------------------------------------------------------------------------
+Design Explanation
+
+1. Separation of Concerns
+Student handles user identity
+UserAccount handles authentication
+This improves security and maintainability
+
+2. Composition Relationships
+A Module contains Assignments
+An Assignment has a Deadline
+These are strong ownership relationships
+
+3. Association Relationships
+Assignments trigger Notifications
+Dashboard aggregates assignments for display
+
+4. Multiplicity
+One student -> many modules
+One module ->  many assignments
+One assignment ->  many notifications
+
+
+Use Cases ->  Create Assignment, View Dashboard
+State Diagrams ->  Assignment lifecycle Activity Diagrams ->  Notification workflow
+User Stories ->  US-04, US-05, US-08

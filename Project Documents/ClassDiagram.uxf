@@ -1,0 +1,65 @@
+<diagram program="umletino" version="15.1"><zoom_level>5</zoom_level><element><id>UMLClass</id><coordinates><x>320</x><y>50</y><w>105</w><h>70</h></coordinates><panel_attributes>Student
+--
+studentId
+name
+email
+
+--
+register()
+login()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>285</y><w>105</w><h>70</h></coordinates><panel_attributes>Session
+--
+sessionId
+expiry
+
+--
+start()
+end()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>170</y><w>105</w><h>70</h></coordinates><panel_attributes>UserAccount
+--
+userId
+Password
+status
+
+--
+authenticate()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>225</x><y>365</y><w>105</w><h>70</h></coordinates><panel_attributes>Module
+--
+moduleId
+name
+
+--
+addAssignment()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>455</x><y>365</y><w>105</w><h>70</h></coordinates><panel_attributes>Assignment
+--
+assignmentId
+title
+deadline
+status
+
+--
+create()
+updateStatus()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>455</x><y>465</y><w>105</w><h>70</h></coordinates><panel_attributes>Deadline
+--
+dueDate
+reminderDate
+
+--
+setDeadline()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>205</x><y>500</y><w>105</w><h>70</h></coordinates><panel_attributes>Notification
+--
+notificationId
+message
+status
+
+--
+send()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>205</x><y>605</y><w>105</w><h>70</h></coordinates><panel_attributes>Dashboard
+--
+assignmentList
+
+--
+display()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>325</x><y>375</y><w>140</w><h>15</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;260;10</additional_attributes></element><element><id>Relation</id><coordinates><x>265</x><y>430</y><w>15</w><h>60</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>505</x><y>430</y><w>25</w><h>45</h></coordinates><panel_attributes>lt=.&gt;
+  1
+has
+  1</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>115</y><w>30</w><h>65</h></coordinates><panel_attributes>lt=.&gt;
+ 1
+Owns
+ 1</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>235</y><w>35</w><h>60</h></coordinates><panel_attributes>lt=.&gt;
+ 0..1
+Create
+ 1</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Text</id><coordinates><x>365</x><y>380</y><w>60</w><h>35</h></coordinates><panel_attributes>Contains</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>205</x><y>585</y><w>165</w><h>20</h></coordinates><panel_attributes>Student 1 --------------------- 1 Dashboard</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>200</x><y>480</y><w>165</w><h>35</h></coordinates><panel_attributes>Assignment 1 -------------------- Notification (triggers)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>360</x><y>395</y><w>60</w><h>35</h></coordinates><panel_attributes>Contains</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>370</x><y>355</y><w>20</w><h>35</h></coordinates><panel_attributes>  1</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>360</x><y>405</y><w>20</w><h>35</h></coordinates><panel_attributes>0..*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>270</x><y>445</y><w>20</w><h>35</h></coordinates><panel_attributes>  1</panel_attributes><additional_attributes></additional_attributes></element></diagram>
