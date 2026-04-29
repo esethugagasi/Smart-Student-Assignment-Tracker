@@ -43,10 +43,52 @@ Kanban Board Customization
 The project uses an utomated Kanban board to manage tasks.
 
 Customizations include:
-
 Added Testing column to support validation of features
 Added Blocked column to track tasks that cannot proceed
 Applied WIP limit of 3 tasks in progress to improve focus
 
-This setup improves workflow visibility and aligns with Agile best practices.
+
+Assignment 10: From Class Diagrams to Code
+--------------------------------------------
+
+This assignment implements the system designed in previous assignments by translating the UML Class Diagram into working Python code. It also demonstrates the use of creational design patterns and unit testing to ensure correct object creation and system behavior.
+
+Project Structure
+-----------------
+
+creational_patterns/   → Creational pattern implementations  
+src/                   → Core system classes  
+test/                  → Unit tests  
+main.py                → Entry point  
+
+Design Patterns Used
+--------------------
+
+Simple Factory: Used for creating notification types
+Factory Method: Delegates creation to subclasses
+Abstract Factory: Creates related notification objects
+Builder: Used to construct assignments step-by-step
+Prototype: Clone assignment templates
+Singleton: Ensures single database connection
+
+Running the Project
+-------------------
+
+Run the main program:
+python main.py
+Expected output:
+Email sent
+SMS sent
+
+Run all tests:
+pytest
+
+Run with coverage:
+pytest --cov=.
+Example result:
+2 passed
+Coverage: 81%
+
+
+
 

@@ -1,0 +1,52 @@
+Assignment 10 Reflection
+
+Introduction
+
+This assignment focused on transforming a UML Class Diagram into working code while applying creational design patterns and validating the implementation through unit testing.
+
+Challenges Faced
+
+1. Translating UML to Code
+
+One challenge was converting abstract class diagrams into concrete implementations. Deciding how to represent relationships such as associations and responsibilities required careful consideration.
+
+2. Applying Creational Patterns
+
+Understanding when and where to apply each creational pattern was not straightforward. For example:
+
+Builder was used for flexible object construction
+Singleton required careful handling to ensure only one instance exists
+Abstract Factory required structuring related object creation
+
+3. Project Structure and Imports
+
+Managing Python imports and folder structure caused initial issues, especially when running tests with pytest. Fixing module paths and ensuring correct package structure was necessary.
+
+
+Alignment with Previous Assignments
+
+This assignment builds directly on earlier work:
+Assignment 3: System architecture guided module structure
+Assignment 4: Functional requirements influenced class methods
+Assignment 5: Use cases were implemented as system behaviors
+Assignment 6: User stories translated into features
+Assignment 7: Tasks implemented through GitHub workflow
+Assignment 8 & 9: Class diagrams became actual code
+
+Design Decisions
+
+Python was chosen for simplicity and readability
+Creational patterns were used to improve flexibility and scalability
+Code was modularized into separate folders for clarity
+Unit testing ensured correctness and reliability
+
+Lessons Learned
+
+Design patterns are useful for managing complexity in larger systems
+Proper project structure is critical for testing and maintainability
+Translating diagrams into code requires both technical and conceptual understanding
+Testing is essential to validate assumptions made during design
+
+Conclusion
+
+This assignment successfully bridges the gap between system design and implementation. It demonstrates how theoretical models such as UML diagrams and design patterns can be applied to build a working, testable system.
