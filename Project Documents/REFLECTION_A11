@@ -1,0 +1,23 @@
+Assignment 11: Repository Pattern and Storage Abstraction
+
+This assignment introduces the Repository Pattern to separate business logic from storage logic.
+
+Features Implemented
+
+Generic repository interface using Python generics
+Entity-specific repositories
+In-memory storage using dictionaries
+Repository Factory for storage abstraction
+Future database repository stub
+CRUD unit tests using pytest
+
+Design Choice
+
+A Factory Pattern was used to abstract repository creation and support future storage backends such as databases or file systems.
+
+Benefits
+
+Improved maintainability
+Easier testing
+Scalability for future persistence layers
+Reduced code duplication through generics
