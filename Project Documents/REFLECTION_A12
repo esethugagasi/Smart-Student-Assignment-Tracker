@@ -1,0 +1,51 @@
+ssignment 12 – Service Layer and REST API Development
+
+Overview
+This assignment focused on extending the Smart Student Assignment Tracker system by implementing:
+
+- A Service Layer for business logic
+- RESTful API endpoints using FastAPI
+- Repository abstraction for data access
+- OpenAPI/Swagger API documentation
+- Unit and integration testing
+
+The implementation follows layered software architecture principles to ensure separation of concerns, maintainability, and scalability.
+
+Implemented Features
+Service Layer
+The service layer handles business rules and validation logic.
+
+Implemented services:
+- AssignmentService
+
+Responsibilities:
+- Create assignments
+- Retrieve assignments
+- Validate assignment data
+- Communicate with repository layer
+
+REST API
+RESTful endpoints were implemented using FastAPI.
+
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| GET | / | API status endpoint |
+| GET | /assignments | Retrieve all assignments |
+| POST | /assignments | Create a new assignment |
+
+API Documentation
+FastAPI automatically generates Swagger/OpenAPI documentation.
+
+Swagger UI:
+http://127.0.0.1:8000/docs
+
+Testing
+The project includes:
+- Unit tests
+- Repository tests
+- API integration tests
+- Coverage reporting
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)

@@ -1,9 +1,14 @@
-from creational_patterns.abstract_factory import ConcreteFactory
+from fastapi import FastAPI
+from api.assignment_routes import router
 
-factory = ConcreteFactory()
+app = FastAPI(
+    title="Smart Student Assignment Tracker API"
+)
 
-email = factory.create_email()
-sms = factory.create_sms()
+@app.get("/")
+def home():
+    return {
+        "message": "Smart Student Assignment Tracker API is running"
+    }
 
-print(email.send())
-print(sms.send())
+app.include_router(router)
